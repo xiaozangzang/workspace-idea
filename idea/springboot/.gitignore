@@ -1,0 +1,30 @@
+# Compiled class file
+target/
+.class
+.idea/
+upload/
+classes/
+*.iml
+out/
+tools/env/
+# Log file
+*.log
+FileUpload/*
+.classpath
+.mymetadata
+.project
+.settings/
+.myeclipse/
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
