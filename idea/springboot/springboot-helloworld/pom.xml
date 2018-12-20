@@ -9,24 +9,52 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>springboot-helloworld Maven Webapp</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+  <!-- Spring Boot 启动父依赖 -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.1.RELEASE</version>
+  </parent>
+
   <dependencies>
+    <!-- Spring Boot web依赖 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- Junit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
+      <version>4.12</version>
+    </dependency>
+
+    <!--<dependency>-->
+    <!--<groupId>net.sf.json-lib</groupId>-->
+    <!--<artifactId>json-lib</artifactId>-->
+    <!--<version>2.4</version>-->
+    <!--</dependency>-->
+
+    <dependency>
+      <groupId>com.google.collections</groupId>
+      <artifactId>google-collections</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>3.0.6</version>
     </dependency>
   </dependencies>
+
 
   <build>
     <finalName>springboot-helloworld</finalName>
